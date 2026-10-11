@@ -3,95 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grand Traverse Sector | The AMC Liberty & Union Alliance</title>
+    <title>Grand Traverse County Dossier | AMC Liberty & Union</title>
     <style>
-        :root {
-            --dark-slate: #101f30; --light-gray: #fcfaf2; --border-color: #e2e8f0;
-            --civic-blue: #2b6cb0; --alert-red: #8c1d21; --text-dark: #2a2e33;
-        }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; color: var(--text-dark); line-height: 1.6; }
-        header { background-color: var(--dark-slate); color: #ffffff; padding: 1.5rem 2rem; border-bottom: 4px solid var(--civic-blue); }
-        header h1 { margin: 0; font-family: "Georgia", serif; font-size: 1.8rem; }
-        nav { margin-top: 0.5rem; } nav a { color: #a0aec0; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
-        main { max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; }
-        .download-box { border: 1px solid var(--border-color); border-radius: 6px; padding: 1.25rem; background: var(--light-gray); display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-        .btn { background-color: var(--civic-blue); color: white; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; font-weight: bold; font-size: 0.85rem; text-align: center; }
-        .btn-alert { background-color: var(--alert-red); }
-        .timeline-header { font-family: "Georgia", serif; color: var(--dark-slate); border-bottom: 2px solid var(--dark-slate); padding-bottom: 0.25rem; margin-top: 3rem; margin-bottom: 1.5rem; }
-        .timeline-post { margin-bottom: 3.5rem; border-bottom: 1px dashed var(--border-color); padding-bottom: 2.5rem; }
-        .meta-strip { font-size: 0.85rem; color: #718096; margin-bottom: 1rem; text-transform: uppercase; font-weight: bold; letter-spacing: 0.5px; }
-        blockquote { border-left: 4px solid var(--alert-red); padding: 1rem 1.25rem; margin: 1.5rem 0; font-family: "Georgia", serif; font-size: 1.1rem; color: #4a5568; background-color: #f7fafc; }
+        :root { --navy: #101f30; --red: #8c1d21; --parchment: #fcfaf2; --charcoal: #2a2e33; --blue: #2b6cb0; }
+        body { font-family: sans-serif; margin: 0; padding: 0; color: var(--charcoal); background-color: #ffffff; line-height: 1.6; }
+        header { background-color: var(--navy); color: #ffffff; padding: 2rem; border-bottom: 5px solid var(--red); }
+        header h1 { margin: 0; font-family: serif; font-size: 2.2rem; }
+        main { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+        .section-title { font-family: serif; color: var(--navy); border-bottom: 2px solid var(--navy); padding-bottom: 0.5rem; margin-top: 2rem; }
+        .press-card { background: var(--parchment); border: 1px solid #e2e8f0; border-left: 6px solid var(--blue); padding: 2rem; margin-top: 1.5rem; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.03); }
+        .quote-box { margin: 1rem 0; padding-left: 1.25rem; border-left: 3px solid #cbd5e0; font-size: 0.95rem; color: #2a2e33; font-style: italic; }
+        .btn { display: inline-block; background-color: var(--navy); color: white; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: bold; font-size: 0.85rem; margin-right: 1rem; margin-top: 1rem; text-align: center; }
+        .btn:hover { background-color: var(--red); }
+        .btn-press { background-color: var(--blue); }
     </style>
 </head>
 <body>
     <header>
-        <h1>The AMC Liberty & Union Alliance: Grand Traverse Sector</h1>
-        <nav><a href="../index.html">← Back to Overview</a></nav>
+        <h1>Grand Traverse County Field Dossier</h1>
+        <p>The AMC Liberty & Union Alliance — Jurisdictional Accountability Records</p>
     </header>
     <main>
-        <h2>Official County Policy Framework & Submissions</h2>
-        <div class="download-box">
-            <div>
-                <strong>MCL 46.11(l) Fiscal Protection Ordinance Brief</strong>
-                <span style="display:block; font-size:0.85rem; color:#718096;">Submitted: October 7, 2026 | 12 Pages (PDF)</span>
+        <!-- COALITION PRESS SPOTLIGHT BANNER -->
+        <h2 class="section-title">Oversight in the Public Record</h2>
+        <div class="press-card">
+            <div style="display: inline-block; background: #ebf8ff; color: var(--blue); font-weight: bold; font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: 4px; margin-bottom: 0.5rem;">TRAVERSE CITY RECORD-EAGLE COVER FEATURE</div>
+            <h3 style="margin: 0 0 0.5rem 0; font-family: serif; font-size: 1.5rem; color: var(--navy);">Flock Cameras Land on GT Board's Radar</h3>
+            <p style="margin: 0 0 1.25rem 0; font-size: 0.85rem; color: #718096;">Published: October 9, 2026 | Front Page Investigative Feature by Aly Kleidon</p>
+            
+            <p style="font-size: 0.95rem; margin: 0 0 1rem 0;">Following organized civic deployments, independent constitutional advocates and concerned Traverse City residents entered the Grand Traverse County Board session to challenge un-voted automated license plate reader procurement networks.</p>
+            
+            <div class="quote-box">
+                "Williamsburg resident Augustus Chell provided a public comment on the county's Flock cameras... 'Private technology vendors bypass this commission's centralized legislative oversight by executing fragmented township contracts to rig Traverse City with an intrusive, auto-surveillance wall... These independent township cameras do not operate in a vacuum; they rely on an un-voted backdoor subsidy from this county...'"
             </div>
-            <a href="Grand Traverse County - Anti Flock Brief - Augustus Chell 10-7-26.pdf" download class="btn">Download Brief</a>
+
+
+            <div class="quote-box">
+                "Political candidates Dr. Mitch Distin and Kate Gallup were among those who spoke out against the cameras, citing similar use of Flock cameras taking place with the Antrim County Board of Commissioners."
+            </div>
+
+
+            <h4 style="margin: 1.5rem 0 0.5rem 0; font-family: serif; font-size: 1.1rem; color: var(--navy);">Multi-County Coalition Record:</h4>
+            <p style="font-size: 0.9rem; margin: 0 0 1rem 0; color: #2a2e33;">The Alliance records and acknowledges the parallel statutory tracking work being executed across regional lines by our coalition partners:</p>
+            
+            <ul style="font-size: 0.9rem; color: #2a2e33; margin: 0 0 1.5rem 0; padding-left: 1.25rem;">
+                <li style="margin-bottom: 0.5rem;"><strong>Mitchell Distin (Antrim District 2):</strong> Spearheaded a packed-house turnout at the October 1st Antrim meeting, deploying six comprehensive statutory record scrolls for citizens to read directly into the public record to challenge corporate surveillance expansions. <em>"We are not anti-police, we are anti-surveillance... if folks can't tell the difference, it's because they haven't been watching what's going on."</em></li>
+                <li><strong>Kate Gallup (Senate District 37 Candidate):</strong> Standing with citizens at both the packed Antrim assembly and the Grand Traverse session to track municipal procurement channels. <em>"They currently do not understand this technology and have massive concerns... Freedom of Information Act requests have been filed in Antrim and Grand Traverse counties."</em></li>
+            </ul>
+
+
+            <div style="margin-top: 1.25rem; font-size: 0.9rem; color: #4a5568; border-top: 1px solid #e2e8f0; padding-top: 1rem;">
+                <strong>Alliance Record Verification:</strong> Hard copy prints of the full cover feature have been compiled into our physical system vault alongside filed statutory briefing mandates.
+            </div>
+
+
+            <!-- DIGITAL ACCESS BUTTONS -->
+            <a href="Record-Eagle-Headline.jpg" target="_blank" class="btn btn-press">View Headline Scan (JPG) →</a>
+            <a href="Record-Eagle-Text.jpg" target="_blank" class="btn btn-press">View Testimony Scan (JPG) →</a>
         </div>
 
 
-        <div class="download-box">
-            <div>
-                <strong>4-Page Executive Briefing Handout</strong>
-                <span style="display:block; font-size:0.85rem; color:#718096;">Submitted: October 7, 2026 | 4 Pages (PDF)</span>
-            </div>
-            <a href="Handout Grand Traverse County - Anti-Flock - Augustus Chell 10-7-26.pdf" download class="btn">Download Handout</a>
-        </div>
-
-
-        <h2 class="timeline-header">Township Sub-Committees</h2>
-        <div class="download-box" style="background: #fff5f5; border-color: #fed7d7;">
-            <div>
-                <strong>East Bay Township Board Action</strong>
-                <span style="display:block; font-size:0.85rem; color:#718096;">Local Right-of-Way Ordinance Review</span>
-            </div>
-            <a href="East-Bay-Township/index.html" class="btn btn-alert">Access East Bay Records →</a>
-        </div>
-
-
-        <h2 class="timeline-header">Public Record Submissions Tracker</h2>
-
-
-        <!-- GT MEET 2 -->
-        <div class="timeline-post">
-            <div class="meta-strip">October 7, 2026 • Coordinated Floor Action & Solutions Filing</div>
-            <h3 style="font-family: Georgia, serif; margin: 0 0 1rem 0;">Breaking Administrative Inertia</h3>
-            <div class="download-box" style="margin-top: 1rem; margin-bottom: 1rem;">
-                <div>
-                    <strong>Oct 7 Spoken Testimony Transcript</strong>
-                    <span style="display:block; font-size:0.85rem; color:#718096;">Filed: October 7, 2026 | Full Record Text (PDF)</span>
-                </div>
-                <a href="Grand Traverse County Speech - Anti-Flock - Augustus Chell 10-7-26.pdf" download class="btn">View Script PDF</a>
-            </div>
-            <blockquote>
-                "The reason I am standing here today instead of at my job working is to address a critical vulnerability in how Grand Traverse public assets and administrative labor are being utilized. Private technology vendors bypassed this Commission's centralized legislative oversight by executing fragmented township contracts to ring Traverse City with an intrusive automated surveillance wall... When I and other local workers pass through intersections like South Airport and Barlow, just to earn a living, we are forced to be tracked by technology we never voted on... Proposed Action 1 does not dictate deputy behavior; it directs the county's civilian IT Department to permanently scrub all proprietary vendor access keys and data tokens from county-owned devices."
-            </blockquote>
-        </div>
-
-
-        <!-- GT MEET 1 -->
-        <div class="timeline-post" style="border-bottom: none; padding-bottom: 0;">
-            <div class="meta-strip">September 16, 2026 • Spoken Testimony (The Baseline)</div>
-            <div class="download-box" style="margin-top: 1rem; margin-bottom: 1rem;">
-                <div>
-                    <strong>Sept 16 Spoken Testimony Transcript</strong>
-                    <span style="display:block; font-size:0.85rem; color:#718096;">Filed: September 16, 2026 | Full Records Text (PDF)</span>
-                </div>
-                <a href="Augustus Chell - Anti-Flock Brief - Augustus Chell 9-16-26.pdf" download class="btn">View Script PDF</a>
-            </div>
-            <blockquote>
-                "Right now, our nation's sacred promise of liberty, justice, and human dignity for all is facing an unprecedented assault from an unregulated AI surveillance grid. As it stands, this board holds the direct budgetary oversight that sustains its operational foundation... The Sheriff's Office bypassed democratic choice. They quietly secured side-deals through individual township boards—like Garfield, East Bay, and Peninsula—to ring the city borders with an automated surveillance wall... Pull the plug on Flock Safety, stand up for liberty, and defund the Sheriff's use of this grid."
-            </blockquote>
-        </div>
+        <h2 class="section-title">Filed Jurisdictional Briefs</h2>
+        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Download official non-partisan infrastructure assessments, record challenges, and meeting submissions:</p>
+        
+        <a href="Grand Traverse County - Anti Flock Brief - Augustus Chell 10-7-26.pdf" download class="btn">Download 12-Page County Brief (PDF)</a>
+        <a href="../index.html" class="btn" style="background-color: #718096;">← Return to Master Portal</a>
     </main>
 </body>
 </html>
