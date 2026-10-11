@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AMC Liberty & Union Alliance</title>
+    <style>
+        :root { --navy: #101f30; --red: #8c1d21; --parchment: #fcfaf2; --charcoal: #2a2e33; --blue: #2b6cb0; }
+        body { font-family: sans-serif; margin: 0; padding: 0; color: var(--charcoal); line-height: 1.6; }
+        header { background-color: var(--navy); color: #ffffff; padding: 2.5rem 2rem; border-bottom: 5px solid var(--red); }
+        header h1 { margin: 0; font-family: serif; font-size: 2.5rem; }
+        header p { margin: 0.5rem 0 0 0; color: #b0c4de; font-style: italic; }
+        main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+        .section-title { font-family: serif; color: var(--navy); border-bottom: 2px solid var(--navy); padding-bottom: 0.5rem; margin-top: 2.5rem; }
+        .broadcast-container { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; background-color: var(--parchment); border-top: 4px solid var(--red); padding: 2rem; margin-top: 1.5rem; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.04); align-items: center; }
+        .video-box { background-color: #1a2a3a; color: #ffffff; padding: 3rem 2rem; text-align: center; border-radius: 4px; }
+        .video-box h4 { font-family: serif; margin: 0 0 0.5rem 0; font-size: 1.3rem; color: #f0c420; }
+        .video-box p { font-size: 0.85rem; color: #cbd5e0; margin: 0 0 1.5rem 0; }
+        .btn { display: inline-block; background-color: var(--red); color: white; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: bold; font-size: 0.9rem; }
+        .badge { display: inline-block; background: #fff5f5; color: var(--red); font-weight: bold; font-size: 0.75rem; padding: 0.25rem 0.5rem; border: 1px solid #fed7d7; border-radius: 4px; margin-bottom: 0.5rem; }
+        .vault-section { background-color: var(--navy); color: #ffffff; padding: 2.25rem; border-radius: 6px; border-left: 6px solid var(--red); margin-top: 1.5rem; }
+        .vault-title { font-family: serif; font-size: 1.6rem; margin: 0 0 1rem 0; border-bottom: 1px solid #2d3748; padding-bottom: 0.5rem; }
+        .vault-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+        .vault-link { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); color: #ffffff; text-decoration: none; padding: 1.1rem; border-radius: 4px; font-weight: bold; text-align: center; font-size: 0.9rem; }
+        .vault-link:hover { background: var(--red); }
+        .vault-link.locked { background: rgba(255,255,255,0.02); border-style: dashed; color: #a0aec0; cursor: not-allowed; }
+        .local-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+        .action-card { border: 1px solid #e2e8f0; border-radius: 6px; padding: 1.5rem; cursor: pointer; background: #fff; }
+        .action-card:hover { border-color: var(--blue); box-shadow: 0 10px 15px rgba(0,0,0,0.05); }
+        .card-title { font-family: serif; font-size: 1.4rem; margin: 0 0 0.5rem 0; color: var(--navy); }
+        .badge-local { display: inline-block; background: #ebf8ff; color: var(--blue); font-weight: bold; font-size: 0.75rem; padding: 0.25rem 0.5rem; border: 1px solid #bee3f8; border-radius: 4px; margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2.5rem; margin-top: 5rem; background-color: var(--parchment); font-size: 0.85rem; color: #718096; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The AMC Liberty & Union Alliance</h1>
+        <p>"Liberty and Union, now and forever, one and inseparable." — Regional Public Oversight</p>
+    </header>
+    <main>
+        <h2 class="section-title">National Constitutional Analysis</h2>
+        <div class="broadcast-container">
+            <div class="video-box">
+                <h4>Alliance Broadcast Feed</h4>
+                <p>National analysis and constitutional briefings are hosted live on our official channel repository.</p>
+                <a href="https://youtube.com" target="_blank" class="btn">Open YouTube Channel →</a>
+            </div>
+            <div class="broadcast-meta">
+                <div class="badge">U.S. REGIONAL BRIEFING</div>
+                <h3 style="font-family: serif; margin: 0 0 0.5rem 0;">Deconstructing Federal Statutory Overreach</h3>
+                <p style="font-size: 0.9rem; color: #4a5568; margin: 0;">Reviewing macro-level legislation—including Section 219 of the National Defense Authorization Act (NDAA)—to track where centralized mandates undermine local privacy laws.</p>
+            </div>
+        </div>
+        <h2 class="section-title">The Core Pillars of Sovereign Liberty</h2>
+        <section class="vault-section">
+            <h3 class="vault-title">The Core Covenants of Liberty</h3>
+            <div class="vault-grid">
+                <a href="Vault/Declaration of Independence - AMC.pdf" download class="vault-link">The Declaration of Independence (PDF)</a>
+                <a href="#" class="vault-link locked">The U.S. Constitution [Archiving...]</a>
+                <a href="#" class="vault-link locked">The Bill of Rights [Archiving...]</a>
+            </div>
+        </section>
+        <h2 class="section-title">Local Jurisdictional Action</h2>
+        <div class="local-grid">
+            <div class="action-card" onclick="window.location.href='Grand-Traverse-County/index.html';">
+                <div class="badge-local">GT FIELD DOSSIER</div>
+                <h3 class="card-title">Grand Traverse County</h3>
+                <p style="font-size: 0.85rem; color: #4a5568; margin: 0 0 1rem 0;">Tracking surveillance parameters and infrastructure defunding under MCL 46.11(l).</p>
+                <span style="color: var(--blue); font-weight: bold; font-size: 0.85rem;">Access Records →</span>
+            </div>
+            <div class="action-card" onclick="window.location.href='Antrim-County/index.html';">
+                <div class="badge-local">ANTRIM FIELD DOSSIER</div>
+                <h3 class="card-title">Antrim County</h3>
+                <p style="font-size: 0.85rem; color: #4a5568; margin: 0 0 1rem 0;">Dismantling segmented procurement networks and budget oversight under MCL 46.11(m).</p>
+                <span style="color: var(--blue); font-weight: bold; font-size: 0.85rem;">Access Records →</span>
+            </div>
+        </div>
+    </main>
+    <footer><p>© 2026 Augustus Chell. Regional public record preservation and constitutional awareness.</p></footer>
+</body>
+</html>
