@@ -11,11 +11,16 @@
         header h1 { margin: 0; font-family: serif; font-size: 2.2rem; }
         main { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
         .section-title { font-family: serif; color: var(--navy); border-bottom: 2px solid var(--navy); padding-bottom: 0.5rem; margin-top: 2rem; }
-        .press-card { background: var(--parchment); border: 1px solid #e2e8f0; border-left: 6px solid var(--blue); padding: 2rem; margin-top: 1.5rem; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.04); }
+        .press-card { background: var(--parchment); border: 1px solid #e2e8f0; border-left: 6px solid var(--blue); padding: 2rem; margin-top: 1.5rem; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.03); }
         .quote-box { margin: 1rem 0; padding-left: 1.25rem; border-left: 3px solid #cbd5e0; font-size: 0.95rem; color: #2a2e33; font-style: italic; }
-        .btn { display: inline-block; background-color: var(--navy); color: white; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: bold; font-size: 0.85rem; margin-right: 1rem; margin-top: 1rem; text-align: center; }
+        .briefs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 1.5rem; margin-bottom: 2rem; }
+        .btn { display: inline-block; background-color: var(--navy); color: white; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: bold; font-size: 0.85rem; margin-top: 1rem; text-align: center; }
         .btn:hover { background-color: var(--red); }
-        .btn-press { background-color: var(--blue); }
+        .btn-press { background-color: var(--blue); margin-right: 1rem; }
+        .btn-download { background-color: var(--navy); margin-top: 0; display: block; width: 100%; box-sizing: border-box; }
+        .file-card { border: 1px solid #e2e8f0; border-radius: 6px; padding: 1.25rem; background: #fff; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .file-card h4 { font-family: serif; margin: 0 0 0.5rem 0; color: var(--navy); font-size: 1.15rem; }
+        .file-card p { margin: 0 0 1rem 0; font-size: 0.85rem; color: #4a5568; line-height: 1.4; }
     </style>
 </head>
 <body>
@@ -44,10 +49,10 @@
 
 
             <h4 style="margin: 1.5rem 0 0.5rem 0; font-family: serif; font-size: 1.1rem; color: var(--navy);">Multi-County Coalition Record:</h4>
-            <p style="font-size: 0.9rem; margin: 0 0 1rem 0; color: #2a2e33;">The Alliance records and acknowledges the parallel tracking work being executed across regional lines by our coalition partners:</p>
+            <p style="font-size: 0.9rem; margin: 0 0 1rem 0; color: #2a2e33;">The Alliance records and acknowledges the parallel statutory tracking work being executed across regional lines by our coalition partners:</p>
             
             <ul style="font-size: 0.9rem; color: #2a2e33; margin: 0 0 1.5rem 0; padding-left: 1.25rem;">
-                <li style="margin-bottom: 0.5rem;"><strong>Dr. Mitchell Distin (Candidate for Michigan House District 104):</strong> Spearheaded a packed-house turnout at the October 1st Antrim meeting, deploying six comprehensive statutory record scrolls for citizens to read directly into the public record. Distin has actively coordinated multi-county FOIA tracking metrics, declaring: <em>"They currently do not understand this technology and have massive concerns... Freedom of Information Act requests have been filed in Antrim and Grand Traverse counties... We are not anti-police, we are anti-surveillance... if folks can't tell the difference, it's because they haven't been watching what's going on."</em></li>
+                <li style="margin-bottom: 0.5rem;"><strong>Dr. Mitchell Distin (Candidate for Michigan House District 104):</strong> Spearheaded a packed-house turnout at the October 1st Antrim meeting, deploying six comprehensive statutory record scrolls for citizens to read directly into the public record. Distin has actively coordinated multi-county FOIA tracking metrics, declaring: <em>"We are not anti-police, we are anti-surveillance... if folks can't tell the difference, it's because they haven't been watching what's going on."</em></li>
                 <li><strong>Kate Gallup (Candidate for Michigan Senate District 37):</strong> Standing in solidarity with residents at both the packed Antrim assembly and the Grand Traverse board sessions to audit procurement channels and prevent corporate technology contracts from overriding local citizen protections.</li>
             </ul>
 
@@ -57,17 +62,55 @@
             </div>
 
 
-            <!-- FIXED SECURE LINK CHANNELS BELOW -->
+            <!-- DIGITAL ACCESS BUTTONS -->
             <a href="Record-Eagle-Headline.jpg" target="_blank" class="btn btn-press">View Headline Scan (JPG) →</a>
             <a href="Record-Eagle-Text.jpg" target="_blank" class="btn btn-press">View Testimony Scan (JPG) →</a>
         </div>
 
 
-        <h2 class="section-title">Filed Jurisdictional Briefs</h2>
+        <h2 class="section-title">Filed Jurisdictional Briefs & Submissions</h2>
         <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Download official non-partisan infrastructure assessments, record challenges, and meeting submissions:</p>
         
-        <a href="Grand Traverse County - Anti Flock Brief - Augustus Chell 10-7-26.pdf" download class="btn">Download 12-Page County Brief (PDF)</a>
-        <a href="../index.html" class="btn" style="background-color: #718096;">← Return to Master Portal</a>
+        <!-- FULLY RESTORED RECORD DOWNLOADING CARDS GRID -->
+        <div class="briefs-grid">
+            <div class="file-card">
+                <div>
+                    <h4>12-Page Statutory Brief</h4>
+                    <p>Complete legislative analysis submitted to the commissioners on Oct 7th challenging vendor procurement nets.</p>
+                </div>
+                <a href="Grand Traverse County - Anti Flock Brief - Augustus Chell 10-7-26.pdf" download class="btn btn-download">Download Brief (PDF)</a>
+            </div>
+
+
+            <div class="file-card">
+                <div>
+                    <h4>October 7th Board Speech</h4>
+                    <p>Official transcription of the spoken public comment challenging township surveillance perimeters.</p>
+                </div>
+                <a href="Grand Traverse County Speech - Anti-Flock - Augustus Chell 10-7-26.pdf" download class="btn btn-download">Download Speech (PDF)</a>
+            </div>
+
+
+            <div class="file-card">
+                <div>
+                    <h4>September 16th Submission</h4>
+                    <p>Initial regional notification and regulatory brief filed regarding automated license tracking tracking data loops.</p>
+                </div>
+                <a href="Grand Traverse County - Anti Flock Brief - Augustus Chell 9-16-26.pdf" download class="btn btn-download">Download Filing (PDF)</a>
+            </div>
+
+
+            <div class="file-card">
+                <div>
+                    <h4>Podium Meeting Handout</h4>
+                    <p>The core visual summary page and statutory cheat-sheet distributed directly into the trustee packets.</p>
+                </div>
+                <a href="Grand Traverse County Handout - Anti-Flock - Augustus Chell 10-7-26.pdf" download class="btn btn-download">Download Handout (PDF)</a>
+            </div>
+        </div>
+
+
+        <a href="../index.html" class="btn" style="background-color: #718096; margin-top: 0;">← Return to Master Portal</a>
     </main>
 </body>
 </html>
