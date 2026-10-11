@@ -47,8 +47,9 @@
             </div>
             <div class="broadcast-meta">
                 <div class="badge">U.S. REGIONAL BRIEFING</div>
-                <h3 style="font-family: serif; margin: 0 0 0.5rem 0;">Deconstructing Federal Statutory Overreach</h3>
-                <p style="font-size: 0.9rem; color: #4a5568; margin: 0;">Reviewing macro-level legislation—including Section 219 of the National Defense Authorization Act (NDAA)—to track foreign procurement actions and economic interventions that compromise sovereign national interests.</p>
+                <!-- DYNAMIC IDs PLACED BELOW TO AUTOMATICALLY UPDATE VIA JAVASCRIPT -->
+                <h3 id="dyn-title" style="font-family: serif; margin: 0 0 0.5rem 0;">Deconstructing Federal Statutory Overreach</h3>
+                <p id="dyn-desc" style="font-size: 0.9rem; color: #4a5568; margin: 0;">Reviewing macro-level legislation—including Section 219 of the National Defense Authorization Act (NDAA)—to track foreign procurement actions and economic interventions that compromise sovereign national interests.</p>
             </div>
         </div>
 
@@ -80,5 +81,20 @@
         </div>
     </main>
     <footer><p>© 2026 Augustus Chell. Regional public record preservation and constitutional awareness.</p></footer>
+
+
+    <!-- AUTOMATED DATA EXTRACTION PROCESSING ENGINE -->
+    <script>
+        const chName = 'TheAMCLibertyUnionAlliance';
+        fetch(`https://rss2json.com{chName}`)
+        .then(res => res.json()).then(data => {
+            if (data.items && data.items.length > 0) {
+                const latestVid = data.items[0];
+                document.getElementById('dyn-title').textContent = latestVid.title;
+                let descriptionText = latestVid.description.replace(/<[^>]*>/g, '').substring(0, 180) + '...';
+                document.getElementById('dyn-desc').textContent = descriptionText;
+            }
+        }).catch(err => console.log("Local deployment: fallback values active until cloud connection established."));
+    </script>
 </body>
 </html>
