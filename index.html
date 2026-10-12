@@ -5,101 +5,286 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The AMC Liberty & Union Alliance</title>
     <style>
-        :root { --navy: #101f30; --red: #8c1d21; --parchment: #fcfaf2; --charcoal: #2a2e33; --blue: #2b6cb0; }
-        body { font-family: sans-serif; margin: 0; padding: 0; color: var(--charcoal); line-height: 1.6; }
-        header { background-color: var(--navy); color: #ffffff; padding: 2.5rem 2rem; border-bottom: 5px solid var(--red); }
-        header h1 { margin: 0; font-family: serif; font-size: 2.5rem; }
-        header p { margin: 0.5rem 0 0 0; color: #b0c4de; font-style: italic; }
-        main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
-        .section-title { font-family: serif; color: var(--navy); border-bottom: 2px solid var(--navy); padding-bottom: 0.5rem; margin-top: 2.5rem; }
-        .intent-card { background-color: var(--parchment); border: 1px solid #e2e8f0; border-top: 4px solid var(--navy); padding: 2rem; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); margin-top: 1.5rem; }
-        .intent-card p { font-size: 1rem; margin-bottom: 1.25rem; color: var(--charcoal); text-align: justify; }
-        .intent-card ul { padding-left: 1.25rem; margin-bottom: 1.5rem; }
-        .intent-card li { margin-bottom: 0.75rem; font-size: 0.95rem; }
-        .founder-sig { font-style: italic; font-weight: bold; color: var(--navy); margin-top: 1.5rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem; font-size: 1.05rem; }
-        .broadcast-container { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; background-color: var(--parchment); border-top: 4px solid var(--red); padding: 2rem; margin-top: 1.5rem; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.04); align-items: center; }
-        .video-box { background-color: #1a2a3a; color: #ffffff; padding: 3rem 2rem; text-align: center; border-radius: 4px; }
-        .video-box h4 { font-family: serif; margin: 0 0 0.5rem 0; font-size: 1.3rem; color: #f0c420; }
-        .video-box p { font-size: 0.85rem; color: #cbd5e0; margin: 0 0 1.5rem 0; }
-        .btn { display: inline-block; background-color: var(--red); color: white; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: bold; font-size: 0.9rem; }
-        .badge { display: inline-block; background: #fff5f5; color: var(--red); font-weight: bold; font-size: 0.75rem; padding: 0.25rem 0.5rem; border: 1px solid #fed7d7; border-radius: 4px; margin-bottom: 0.5rem; }
-        .vault-section { background-color: var(--navy); color: #ffffff; padding: 2.25rem; border-radius: 6px; border-left: 6px solid var(--red); margin-top: 1.5rem; }
-        .vault-title { font-family: serif; font-size: 1.6rem; margin: 0 0 1rem 0; border-bottom: 1px solid #2d3748; padding-bottom: 0.5rem; }
-        .vault-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-        .vault-link { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); color: #ffffff; text-decoration: none; padding: 1.1rem; border-radius: 4px; font-weight: bold; text-align: center; font-size: 0.9rem; }
-        .vault-link:hover { background: var(--red); }
-        .vault-link.locked { background: rgba(255,255,255,0.02); border-style: dashed; color: #a0aec0; cursor: not-allowed; }
-        .local-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
-        .action-card { border: 1px solid #e2e8f0; border-radius: 6px; padding: 1.5rem; cursor: pointer; background: #fff; }
-        .action-card:hover { border-color: var(--blue); box-shadow: 0 10px 15px rgba(0,0,0,0.05); }
-        .card-title { font-family: serif; font-size: 1.4rem; margin: 0 0 0.5rem 0; color: var(--navy); }
-        .badge-local { display: inline-block; background: #ebf8ff; color: var(--blue); font-weight: bold; font-size: 0.75rem; padding: 0.25rem 0.5rem; border: 1px solid #bee3f8; border-radius: 4px; margin-bottom: 0.5rem; }
-        footer { text-align: center; padding: 2.5rem; margin-top: 5rem; background-color: var(--parchment); font-size: 0.85rem; color: #718096; }
+        body {
+            background-color: #0d1b2a;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1b263b;
+            border-bottom: 4px solid #e0a96d;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.6rem;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            color: #e0a96d;
+            font-style: italic;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-box {
+            background-color: #1b263b;
+            border: 1px solid #415a77;
+            border-radius: 6px;
+            padding: 30px;
+            margin-bottom: 35px;
+        }
+        h2.section-title {
+            color: #e0a96d;
+            margin-top: 0;
+            border-bottom: 2px solid #415a77;
+            padding-bottom: 8px;
+            font-size: 1.6rem;
+        }
+        p.highlight-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #e2e8f0;
+        }
+        .track-list {
+            margin: 20px 0 0 0;
+            padding-left: 20px;
+        }
+        .track-list li {
+            margin-bottom: 15px;
+        }
+        .track-list strong {
+            color: #e0a96d;
+        }
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        @media (min-width: 768px) {
+            .grid-layout {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .card {
+            background-color: #1b263b;
+            border: 1px solid #415a77;
+            border-radius: 6px;
+            padding: 25px;
+        }
+        .card h3 {
+            color: #e0a96d;
+            margin-top: 0;
+            border-bottom: 1px solid #415a77;
+            padding-bottom: 8px;
+        }
+        .document-link {
+            display: block;
+            background-color: #0d1b2a;
+            border: 1px solid #415a77;
+            color: #ffffff;
+            padding: 12px 15px;
+            margin-top: 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .document-link:hover {
+            background-color: #e0a96d;
+            color: #0d1b2a;
+            border-color: #e0a96d;
+        }
+        .media-gallery {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .gallery-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #415a77;
+            border-radius: 4px;
+        }
+        .action-btn {
+            display: inline-block;
+            background-color: #b22222;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 15px;
+            transition: background 0.2s;
+        }
+        .action-btn:hover {
+            background-color: #ffffff;
+            color: #b22222;
+        }
+        .youtube-box {
+            background-color: #0d1b2a;
+            border: 1px solid #415a77;
+            padding: 25px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .youtube-feed-placeholder {
+            margin-top: 20px;
+            background-color: #1b263b;
+            border: 1px dashed #e0a96d;
+            padding: 20px;
+            border-radius: 4px;
+            color: #cbd5e1;
+        }
+        footer {
+            background-color: #0b132b;
+            border-top: 1px solid #415a77;
+            padding: 40px 20px;
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #a5a5a5;
+        }
+        .disclaimer-box {
+            max-width: 800px;
+            margin: 20px auto 0 auto;
+            line-height: 1.6;
+            padding: 15px;
+            border: 1px dashed #415a77;
+            background-color: #0d1b2a;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
+
+
     <header>
         <h1>The AMC Liberty & Union Alliance</h1>
         <p>"Liberty and Union, now and forever, one and inseparable." — Regional Public Oversight</p>
     </header>
-    <main>
-        <!-- MASTER DECLARATION CARD -->
-        <h2 class="section-title">Declaration of Intent</h2>
-        <div class="intent-card">
-            <p>The AMC Liberty & Union Alliance is established as a non-partisan, independent forum for jurisdictional oversight, public record preservation, and constitutional education.</p>
-            <p>Our mission rests upon a singular, foundational truth: <strong>Our fundamental human rights do not originate from ink on parchment.</strong> They are inherent, natural, and born within us. The supreme compacts of our history—the Declaration of Independence, the United States Constitution, and the Bill of Rights—do not grant us liberty. Instead, they serve as defensive barriers, engineered to safeguard our natural-born rights against centralized overreach.</p>
-            <p>However, paper boundaries are inherently fragile. They possess no automatic enforcement mechanisms. They remain holding lines only so long as the Sovereign People actively hold, defend, and enforce the original intent of those texts. To lose sight of this intent is to lose liberty itself. It is our solemn civic duty to stand as the living guardians of our heritage.</p>
-            <p>To fulfill this obligation, the Alliance operates across three distinct operational tracks:</p>
-            <ul>
-                <li><strong>Historical &amp; Statutory Foundations:</strong> Executing deep-dive analyses into constitutional history, foundational principles, and federal frameworks to track where centralized mandates override local autonomy.</li>
-                <li><strong>National Legislative Tracking:</strong> Monitoring macro-level legislation—such as international procurement acts and sweeping federal statutory changes—to trace how macro-level policies quietly compromise sovereign interests.</li>
-                <li><strong>Local Jurisdictional Action:</strong> Deploying direct public oversight within our regional township and county board chambers. By compiling localized field dossiers, filing precise public record metrics, and issuing technical brief challenges on local soil, we return the power of enforcement to the hands of regional citizens.</li>
+
+
+    <div class="container">
+   <!-- Declaration of Intent Section -->
+        <div class="section-box">
+            <h2 class="section-title">Declaration of Intent</h2>
+            <p class="highlight-text">
+                The AMC Liberty & Union Alliance is established as a non-partisan, independent forum for jurisdictional oversight, public record preservation, and constitutional education [image_Aw0w8M.png].
+            </p>
+            <p>
+                Our mission rests upon a singular, foundational truth: <strong>Our fundamental human rights do not originate from ink on parchment.</strong> They are inherent, natural, and born within us [image_Aw0w8M.png]. The supreme compacts of our history—the Declaration of Independence, the United States Constitution, and the Bill of Rights—do not grant us liberty [image_Aw0w8M.png]. Instead, they serve as defensive barriers, engineered to safeguard our natural-born rights against centralized overreach [image_Aw0w8M.png].
+            </p>
+            <p>
+                However, paper boundaries are inherently fragile [image_Aw0w8M.png]. They possess no automatic enforcement mechanisms [image_Aw0w8M.png]. They remain holding lines only so long as the Sovereign People actively hold, defend, and enforce the original intent of those texts [image_Aw0w8M.png]. To lose sight of this intent is to lose liberty itself [image_Aw0w8M.png]. It is our solemn civic duty to stand as the living guardians of our heritage [image_Aw0w8M.png].
+            </p>
+            
+            <p style="margin-top: 25px; font-weight: bold; color: #e0a96d;">To fulfill this obligation, the Alliance operates across three distinct operational tracks:</p>
+            <ul class="track-list">
+                <li><strong>Historical & Statutory Foundations:</strong> Executing deep-dive analyses into constitutional history, foundational principles, and federal frameworks to track where centralized mandates override local autonomy [image_Aw0w8M.png].</li>
+                <li><strong>National Legislative Tracking:</strong> Monitoring macro-level legislation—such as international procurement acts and sweeping federal statutory changes—to trace how macro-level policies quietly compromise sovereign interests [image_Aw0w8M.png].</li>
+                <li><strong>Local Jurisdictional Action:</strong> Deploying direct public oversight within our regional township and county board chambers [image_Aw0w8M.png]. By compiling localized field dossiers, filing precise public record metrics, and issuing technical brief challenges on local soil, we return the power of enforcement to the hands of regional citizens [image_Aw0w8M.png].</li>
             </ul>
-            <div class="founder-sig">Augustus Melvin Chell — Founder, The AMC Liberty & Union Alliance</div>
         </div>
 
 
-        <h2 class="section-title">National Constitutional Analysis</h2>
-        <div class="broadcast-container">
-            <div class="video-box">
-                <h4>Alliance Broadcast Feed</h4>
-                <p>National analysis and constitutional briefings are hosted live on our official channel repository.</p>
-              <a href="https://youtube.com/@TheAMCLibertyUnionAlliance" target="_blank" class="btn">Open YouTube Channel →</a>
+        <!-- National Constitutional Analysis Section -->
+        <div class="section-box">
+            <h2 class="section-title">National Constitutional Analysis</h2>
+            <div class="youtube-box">
+                <h3 style="color: #e0a96d; margin-top: 0;">Alliance Broadcast Feed</h3>
+                <p>National analysis and constitutional briefings are hosted live on our official channel repository [image_ncq_h9.png].</p>
+                
+                <div class="youtube-feed-placeholder">
+                    <h4 style="margin: 0 0 10px 0; color: #ffffff;">📡 Broadcast Archive Status</h4>
+                    <p style="margin: 0; font-size: 0.9rem; font-style: italic;">
+                        This module anchors your live updates. Click below to enter the channel to view active streams, legislative tracking breakdowns, and town hall records.
+                    </p>
+                </div>
+                
+                <a href="https://youtube.com/@TheAMCLibertyUnionAlliance" target="_blank" class="btn">Open YouTube Channel →</a>
             </div>
-            <div class="broadcast-meta">
-                <div class="badge">U.S. REGIONAL BRIEFING</div>
-                <h3 id="dyn-title" style="font-family: serif; margin: 0 0 0.5rem 0;">Deconstructing Federal Statutory Overreach</h3>
-                <p id="dyn-desc" style="font-size: 0.9rem; color: #4a5568; margin: 0;">Reviewing macro-level legislation—including Section 219 of the National Defense Authorization Act (NDAA)—to track foreign procurement actions and economic interventions that compromise sovereign national interests.</p>
+            
+            <div style="margin-top: 30px;">
+                <span style="background-color: #b22222; color: white; padding: 3px 8px; font-size: 0.75rem; font-weight: bold; border-radius: 3px; text-transform: uppercase;">U.S. Regional Briefing</span>
+                <h3 style="color: #ffffff; margin-top: 10px; margin-bottom: 5px;">Deconstructing Federal Statutory Overreach</h3>
+                <p style="margin-top: 0; color: #cbd5e1;">Reviewing macro-level legislation—including Section 219 of the National Defense Authorization Act (NDAA)—to track foreign procurement actions and economic interventions that compromise sovereign national interests [image_ncq_h9.png].</p>
+            </div>
+        </div>
+
+
+        <!-- Core Covenants Vault Section -->
+        <div class="section-box">
+            <h2 class="section-title">The Core Covenants of Liberty</h2>
+            <p>Access primary foundational source documentation preserved within our secure repository:</p>
+            <div style="max-width: 450px;">
+                <a class="document-link" href="Vault/Declaration of Independence - AMC.pdf" target="_blank">📄 The Declaration of Independence (PDF)</a>
             </div>
         </div>
 
 
-        <h2 class="section-title">The Core Covenants of Liberty</h2>
-        <section class="vault-section">
-            <div class="vault-grid">
-                <a href="Vault/Declaration of Independence - AMC.pdf" download class="vault-link">The Declaration of Independence (PDF)</a>
-                <a href="#" class="vault-link locked">The U.S. Constitution [Archiving...]</a>
-                <a href="#" class="vault-link locked">The Bill of Rights [Archiving...]</a>
-            </div>
-        </section>
+        <!-- Local Jurisdictional Action Grid Section -->
+        <div class="section-box">
+            <h2 class="section-title">Local Jurisdictional Action</h2>
+            <p style="margin-bottom: 25px;">Review the specific technical briefs, public logs, and local dossiers filed across regional county seats:</p>
+            
+            <div class="grid-layout">
+                
+                <!-- Grand Traverse County Column -->
+                <div class="card">
+                    <h3>GT Field Dossier</h3>
+                    <p style="font-size: 0.9rem; color: #cbd5e1; margin-bottom: 20px;">Grand Traverse County — Tracking surveillance parameters and infrastructure defunding under MCL 46.11(l).</p>
+                    
+                    <a class="document-link" href="Grand-Traverse-County/Augustus Chell - Anti-Flock Brief - Augustus Chell 9-16-26 (1).pdf" target="_blank">📋 Anti-Flock Brief (9-16-26)</a>
+                    <a class="document-link" href="Grand-Traverse-County/Grand Traverse County - Anti Flock Brief - Augustus Chell 10-7-26 (1).pdf" target="_blank">📋 Anti-Flock Brief (10-7-26)</a>
+                    <a class="document-link" href="Grand-Traverse-County/Grand Traverse County Speech - Anti-Flock - Augustus Chell 10-7-26 (1).pdf" target="_blank">🗣️ Anti-Flock Public Speech</a>
+                    <a class="document-link" href="Grand-Traverse-County/Handout Grand Traverse County - Anti-Flock - Augustus Chell 10-7-26 (1).pdf" target="_blank">📁 Public Handout Packet</a>
+                    
+                    <h4 style="color: #e0a96d; margin: 25px 0 10px 0; border-top: 1px solid #415a77; padding-top: 15px;">📰 Record-Eagle Press Archives</h4>
+                    <div class="media-gallery">
+                        <img class="gallery-img" src="Grand-Traverse-County/Record-Eagle-Headline.jpg" alt="Record Eagle Headline">
+                        <img class="gallery-img" src="Grand-Traverse-County/Record-Eagle-Text.jpg" alt="Record Eagle Text Material">
+                    </div>
+                </div>
 
 
-        <h2 class="section-title">Local Jurisdictional Action</h2>
-        <div class="local-grid">
-            <div class="action-card" onclick="window.location.href='Grand-Traverse-County/index.html';">
-                <div class="badge-local">GT FIELD DOSSIER</div>
-                <h3 class="card-title">Grand Traverse County</h3>
-                <p style="font-size: 0.85rem; color: #4a5568; margin: 0 0 1rem 0;">Tracking surveillance parameters and infrastructure defunding under MCL 46.11(l).</p>
-                <span style="color: var(--blue); font-weight: bold; font-size: 0.85rem;">Access Records →</span>
-            </div>
-            <div class="action-card" onclick="window.location.href='Antrim-County/index.html';">
-                <div class="badge-local">ANTRIM FIELD DOSSIER</div>
-                <h3 class="card-title">Antrim County</h3>
-                <p style="font-size: 0.85rem; color: #4a5568; margin: 0 0 1rem 0;">Dismantling segmented procurement networks and budget oversight under MCL 46.11(m).</p>
-                <span style="color: var(--blue); font-weight: bold; font-size: 0.85rem;">Access Records →</span>
+                <!-- Antrim County Column -->
+                <div class="card">
+                    <h3>Antrim Field Dossier</h3>
+                    <p style="font-size: 0.9rem; color: #cbd5e1; margin-bottom: 20px;">Antrim County — Dismantling segmented procurement networks and budget oversight under MCL 46.11(m).</p>
+                    
+                    <a class="document-link" href="Antrim-County/Antrim County - Anti Flock Brief - Augustus Chell 10-1-26 (1).pdf" target="_blank">📋 Anti-Flock Brief (10-1-26)</a>
+                    <a class="document-link" href="Antrim-County/Antrim County Speech Anti-Flock.pdf" target="_blank">🗣️ Anti-Flock Public Speech</a>
+                    <a class="document-link" href="Antrim-County/Handout Antrim County - Anti Flock - Augustus Chell 10-1-26 (1).pdf" target="_blank">📁 Public Handout Packet</a>
+                </div>
+
+
             </div>
         </div>
-    </main>
-    <footer><p>© 2026 Augustus Melvin Chell. Regional public record preservation and constitutional awareness.</p></footer>
+
+
+    </div>
+
+
+    <!-- Free-tier, Compliance-Safe Footer -->
+    <footer>
+        <p>&copy; 2026 The AMC Liberty & Union Alliance. Regional public record preservation and constitutional awareness.</p>
+        <div class="disclaimer-box">
+            <strong>ADMINISTRATIVE WATCHDOG DISCLAIMER:</strong> This website is an independent educational civic forum and research repository powered entirely via zero-cost citizen volunteer efforts. To maintain complete alignment with the Michigan Campaign Finance Act (MCFA), this platform operates at a true zero capital expenditure threshold ($0.00) using free public hosting architecture. This platform does not solicit contributions, does not make expenditures, and does not engage in express advocacy or electioneering on behalf of any political office or upcoming ballot question. The informational briefs and statute research presented here serve purely educational public utility roles and do not constitute formal legal counsel.
+        </div>
+    </footer>
+
+
 </body>
 </html>
